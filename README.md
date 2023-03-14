@@ -1,4 +1,4 @@
-# SeSAC Semi Project 공간 입니다.
+# Helmet On
 
 팀장 : 김선홍
 
