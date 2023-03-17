@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HELLmet ON!</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="{% static 'css/default.css' %}">
+</head>
+<body>
+  <center>
+  <h1>HELLmet ON!</h1>
+  <h2>인공지능 헬멧 판독기</h2>
+ 
+<div id="content">
+  <div id="colOne">
+    <div id="menu">
+      <ul>
+        <li><a href="{% url 'index'%}" accesskey="1">Main</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+<h2>WHO WE ARE</h2>
+
+<button class="collapsible">About Project</button>
+
+<div class="content1">
+  <p> <strong><u>이륜차량 이용자</u></strong>가 기기 이용전 딥러닝 기법(Yolov5)를 이용하여<br> 카메라에 빚춰진 이미지에 <strong><u>헬멧 착용 여부</u></strong>를 판별합니다.<br>
+      <img class="profile2" src="/static/images/yeshelmet.jpg">
+      <img class="profile2" src="/static/images/nohelmet.jpg">
+
+
+  </p>
+</div>
+<button class="collapsible">About SeSac</button>
+<div class="content1">
+  <p>꿈꾸는 개발자 데뷔코스<br>
+    청년취업사관학교 SeSAC<br>
+    <div class="box" style="background: #BDBDBD;">
+      <img class="profile" src="/static/images/sesac.png">
+  </div></p>
+  <p>새싹(Seoul Software Academy, SeSAC)은<br>
+    새로운 싹을 틔우기 위해 더 높은 곳을 향해 도전하고<br>
+    한 단계 성장하여 새로운 삶을 개척하는 인재들의 공간입니다.</p>
+</div>
+
+
+<button class="collapsible">About Us</button>
+
+<div class="content1">  
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <div class="box" style="background: #BDBDBD;">
+          <img class="profile" src="/static/images/sunhong.png">
+      </div>
+        <div class="container">
+          <h2>김선홍</h2>
+          <p class="title">수석 모델링</p>
+          <p>example@example.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <div class="box" style="background: #BDBDBD;">
+          <img class="profile" src="/static/images/heesung.jpg">
+      </div>
+        <div class="container">
+          <h2>윤희성</h2>
+          <p class="title">모델링</p>
+          <p>younsnow8281@gamil.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <div class="box" style="background: #BDBDBD;">
+          <img class="profile" src="/static/images/yeabin.jpg">
+      </div>
+        <div class="container">
+          <h2>김예빈</h2>
+          <p class="title">발표 &amp; 모델링</p>
+          <p>dpqls0819@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <div class="box" style="background: #BDBDBD;">
+          <img class="profile" src="/static/images/yeonmi.jpg">
+      </div>
+        <div class="container">
+          <h2>정연미</h2>
+          <p class="title">백앤드</p>
+          <p>wkdus885@gmail.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <div class="box" style="background: #BDBDBD;">
+          <img class="profile" src="/static/images/boseok.png">
+      </div>
+        <div class="container">
+          <h2>정보석</h2>
+          <p class="title">프론트</p>
+          <p>bo.seok.jeong@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("mouseover", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+  coll[i].addEventListener("mouseout", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</div>
+
+<div id="footer">
+  <p>Copyright &copy; 2023 SeSac 인공지능. <strong>헬맷온</strong></a></p>
+</div>
+
+</body>
+</html>
