@@ -1,3 +1,14 @@
 data
 *.csv
 model
+*.png
+keras_yolo4
+*.txt
+yolov4.weights
+yolo4_weight.h5
+Detection
+logs
+with_helmet_add
+*.jpg
+models.py
+data.ipynb
