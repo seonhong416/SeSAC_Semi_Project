@@ -1,4 +1,0 @@
-1. git branch와 연결
-2. 가상환경 구축 / 연결
-3. project/app 폴더 생성
-
