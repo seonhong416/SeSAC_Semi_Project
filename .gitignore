@@ -12,3 +12,8 @@ with_helmet_add
 *.jpg
 models.py
 data.ipynb
+evaluate
+*.names
+*.weights
+helmet_data
+add_data
