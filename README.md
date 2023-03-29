@@ -7,7 +7,7 @@
 주제 : 전동퀵보드 헬멧 착용 여부에 따라 결제 가능 시스템 구현
 
 ***
-# part 1 CNN model
+# CNN model
 
 |model|accuracy(%)|image_size|epochs|batchsize|f1_score(%)|precision_score(%)|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -16,3 +16,6 @@
 |googLeNet_Semodule|99.86|(64, 64)|50|32|99.18|99.64|
 |ResNet_50|99.55|(64, 64)|100|32|99.55|99.35|
 |googLeNet|99.48|(100, 100)|50|32|99.45|99.48|
+
+***
+# Yolov3 model
